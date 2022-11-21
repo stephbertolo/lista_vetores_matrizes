@@ -16,3 +16,13 @@ while True:
 
 for i, a in enumerate(ficha):
     print(f'{i} {a[0]} {a[2]}')
+
+# Checar notas individuais do aluno
+
+while True:
+    opc = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+    if opc == 999:
+        print('FINALIZANDO...')
+        break
+    if opc <= len(ficha) -1:
+        print(f'As notas de {ficha[opc][0]} são {ficha[opc][1]}.')
